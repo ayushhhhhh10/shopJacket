@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy Light";
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+}
+#nav{
+    height: 70px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+    padding: 0 40px;
+}
+#nav h3{
+    font-size: 18px;
+    font-weight: 800;
+}
+#nav i{
+    font-size: 18px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+    padding: 10px 10px;
+}
+#center{
+    padding: 0 70px;
+}
+#center h1{
+    font-size: 5vmax;
+    font-weight: 700;
+    line-height: 5.2vmax;
+}
+#center-mid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -50px;
+}
+#center-mid p{
+    font-size: 1.3vmax;
+    font-weight: 800;
+    line-height: 1.6max;
+}
+#items{
+    margin-top: 80px;
+}
+#center-mid #items h3{
+    font-size: 1.3vmax;
+    font-weight: 800;
+    margin: 0.8vmax 0;
+    border-top: solid 2px ;
+    padding: 1vmax 0px;
+}
+#center-bottom{
+    height: 23.8vh;
+    width:100%;
+    overflow: hidden;
+}
+#center-bottom img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 38%;
+}
+@media (max-width:600px) {
+    #nav{
+        height: 70px;
+        gap: 20px;
+        padding: 0 20px;
+    }
+    #nav h3{
+        font-size: 14px;
+    }
+    #nav i{
+        font-size: 15px;
+    }
+    #center{
+        padding: 5px 30px;
+    }
+    #center h1{
+        font-size: 40px;
+        line-height: 45px;
+        margin-top: 40px;
+    }
+    #center-mid{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 50px;
+    }
+    #center-mid p{
+        font-size: 14px;
+        font-weight: 800;
+        line-height: 20px;
+    }
+    #items{
+        display: flex;
+        gap: 60px;
+        margin: 20px 0;
+    }
+    #center-mid #items h3{
+        font-size: 12px;
+        font-weight: 800;
+        margin: 0.8vmax 0;
+        border-top: solid 2px #444;
+        border-bottom: solid 2px #444;
+        padding: 1vmax 0px;
+    }
+    #center-bottom{
+        height: 46.3%;
+        width:100%;
+        overflow: hidden;
+    }
+    #center-bottom img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
